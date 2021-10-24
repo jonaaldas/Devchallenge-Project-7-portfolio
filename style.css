@@ -307,7 +307,7 @@ body{
   margin-bottom:1em
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1300px) {
   /* display grid */
   .wrapper{
     display: grid;
@@ -363,4 +363,113 @@ body{
     gap: 1em
   }
 
+}
+
+@media (min-width: 1301px) {
+
+  .cont-card{
+    flex-direction: row;
+    align-items: center;
+    min-width: 500px;
+  }
+
+  .name-details{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .name{
+    margin-top: 1em
+  }
+
+  .contact{
+    text-align: right
+  }
+
+  .name, .contact{
+    flex-grow: 1;
+  }
+
+  /* blog */
+  .blog-cont{
+    display: flex;
+  }
+
+  .blog-h1{
+    flex-grow: 1;
+  }
+
+  .blog-img{
+    flex-grow: 1;
+    padding: 20%
+  }
+
+  .portfolio{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-around;
+  }
+
+  .experience-cont{
+    display: flex
+  }
+
+  .experience-cont:nth-child(1){
+    margin-bottom: 1em;
+  }
+  .experience-img{
+    padding: 15%;
+    margin: 1em
+  }
+  .exp1{
+    background-image: url("https://wordpress.org/five-for-the-future/files/2019/10/automattic.png");
+  }
+
+  .exp2{
+    background-image: url("data:image/png;base64,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");
+  }
+
+  .experience-dt{
+    padding-top: 1em
+  }
+
+
+  /* css grid */
+
+  .projects, .portfolio{
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    justify-content: stretch;
+    gap: 2em ;
+    width: 50%;
+    max-width: 1000px
+  }
+  .cont{
+    width: 100%;  
+  }
+
+  .cont-card{
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .cont-details{
+    margin: 0 2em;
+  }
+
+  .exp1, .exp2{
+    flex: 1;
+  }
+
+  .experience-dt{
+    flex-grow: 2;
+  }
 }
