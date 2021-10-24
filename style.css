@@ -307,3 +307,60 @@ body{
   margin-bottom:1em
 }
 
+@media (min-width: 500px) and (max-width: 1000px) {
+  /* display grid */
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+  }
+
+  .cont-card{
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .skills-cont, .blog{
+    align-self: center;
+    justify-self: center;
+  }
+
+  .hobbies, .experience, .projects, .portfolio{
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  /* fixing the cont */
+  .cont-card{
+    flex-direction: row;
+    align-items: center;
+    min-width: 500px;
+    max-width: 800px;
+  }
+
+  .name-details{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .name{
+    margin-top: 1em
+  }
+
+  .contact{
+    text-align: right
+  }
+
+  .name, .contact{
+    flex-grow: 1;
+  }
+
+  /* hobbies */
+  .h-cont , .portfolio, .exp{
+    display: flex;
+    flex-direction: row;
+    gap: 1em
+  }
+
+}
