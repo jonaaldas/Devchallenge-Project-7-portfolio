@@ -209,13 +209,24 @@ body{
 }
 
 .experience-img{
-  background: url("https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/2020/03/the-4th-logo-1024x862.jpg");
+  width: 100%;
+  padding: 20%;
+}
+
+.exp1{
+  background: url("https://wptavern.com/wp-content/uploads/2019/06/Screen-Shot-2019-06-06-at-11.43.55-AM.png");
   background-size: cover;
-  background-position-x: top;
+  background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
-  width: 100%;
-  padding: 42%;
+}
+
+.exp2{
+  background: url("https://securityaffairs.co/wordpress/wp-content/uploads/2021/02/Sequoia-Capital-3.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
 }
 
 .experience-p2{
@@ -223,13 +234,32 @@ body{
 }
 
 .hobbies-img{
-  background: url("https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/2020/03/the-4th-logo-1024x862.jpg");
+  width: 100%;
+  padding: 20%;
+}
+
+.hb1{
+  background: url("https://images.unsplash.com/photo-1551958219-acbc608c6377?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2340&q=80");
   background-size: cover;
   background-position-x: top;
   background-position-y: center;
   background-repeat: no-repeat;
-  width: 100%;
-  padding: 42%;
+}
+
+.hb2{
+  background: url("https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlYWRpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60");
+  background-size: cover;
+  background-position-x: top;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+.hb3{
+  background: url("https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2340&q=80");
+  background-size: cover;
+  background-position-x: top;
+  background-position-y: center;
+  background-repeat: no-repeat;
 }
 
 .hobbies-p2{
@@ -277,58 +307,3 @@ body{
   margin-bottom:1em
 }
 
-@media (min-width: 500px){
-  .wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-  }
-  .cont-card{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(1,1fr);
-    grid-column: 1/-1;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .cont-details{
-    margin: 0 1em 0 1em;
-  }
-
-  .cont-card-img{
-    display: inline-block;
-    height: 200px;
-    margin: 0 auto;
-  }
-
-  .cont-details-p3{
-    grid-column: 2/-1;
-  }
-
-  .cont-details-1{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .cont-details-p1{
-    margin-top: 0;
-  }
-
-  .skills-cont{
-    max-width: 400px;
-  }
-
-  .blog{
-    max-width: 600px;
-  }
-
-  .experience{
-    max-width: 400px;
-  }
-
-  .hobbies ,.portfolio{
-    max-width: 400px;
-  }
-}
